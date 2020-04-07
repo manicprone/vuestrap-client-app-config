@@ -44,8 +44,16 @@ The *Client App Config* plugin requires:
 
 ### Install
 
+#### with yarn:
+
 ``` sh
 $ yarn add vuestrap-client-app-config
+```
+
+#### with npm:
+
+``` sh
+$ npm install vuestrap-client-app-config --save
 ```
 
 ### Bootstrap Your Vue App
@@ -141,9 +149,9 @@ By default, the development app environment will hot-reload changes and will run
 The plugin uses [ESLint][link-eslint-site] for source code linting. The linting will run automatically on `git commit`.
 
 ``` sh
-$ npm run lint
+$ yarn lint
 ```
-
+> You can run with flag `--fix`, or shortcut command *flint*, to trigger auto fixing (e.g. `yarn flint`).
 
 ### Dev Test
 
@@ -151,15 +159,15 @@ The plugin uses [Mocha][link-mocha-site] for the testing framework,
 and [Chai][link-chai-site] and [Chai-HTTP][link-chai-http-site] for its assertions.
 
 ``` sh
-$ npm run test
+$ yarn test
 ```
 
 ### Dev Build
 
-The plugin is automatically built on `npm publish`. But, you can manually build the plugin using:
+The plugin is automatically built on `yarn publish`. But, you can manually build the plugin using:
 
 ``` sh
-$ npm run build-plugin
+$ yarn build-plugin
 ```
 
 
